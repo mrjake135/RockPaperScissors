@@ -16,6 +16,9 @@ SOURCES_CPP += sources/app/task_life.cpp
 SOURCES_CPP += sources/app/task_fw.cpp
 SOURCES_CPP += sources/app/task_list.cpp
 SOURCES_CPP += sources/app/task_display.cpp
+SOURCES_CPP += sources/app/task_game.cpp
+SOURCES_CPP += sources/app/task_game_single.cpp
+SOURCES_CPP += sources/app/task_game_versus.cpp
 
 SOURCES_CPP += sources/app/task_if.cpp
 SOURCES_CPP += sources/app/task_rf24_if.cpp

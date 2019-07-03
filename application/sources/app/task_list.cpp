@@ -19,6 +19,10 @@ task_t app_task_table[] = {
 	{AC_TASK_DBG_ID			,	TASK_PRI_LEVEL_4	,	task_dbg			},
 	{AC_TASK_DISPLAY_ID		,	TASK_PRI_LEVEL_4	,	task_display		},
 
+	{AC_TASK_GAME_ID		,	TASK_PRI_LEVEL_4	,	task_game			},
+	{AC_TASK_GAME_SINGLE_ID	,	TASK_PRI_LEVEL_4	,	task_game_single	},
+	{AC_TASK_GAME_VERSUS_ID	,	TASK_PRI_LEVEL_4	,	task_game_versus	},
+
 	/*************************************************************************/
 	/* RF24 NETWORK TASK */
 	/*************************************************************************/

@@ -43,6 +43,7 @@
 #include "link_phy.h"
 #include "link_hal.h"
 #include "link_sig.h"
+#include "task_game.h"
 
 #include "rtc.h"
 #include "led.h"
@@ -91,6 +92,7 @@ static int32_t shell_fwu(uint8_t* argv);
 static int32_t shell_svc(uint8_t* argv);
 static int32_t shell_psv(uint8_t* argv);
 
+
 /*****************************************************************************/
 /*  command table
  */
@@ -115,6 +117,7 @@ cmd_line_t lgn_cmd_table[] = {
 	{(const int8_t*)"fwu",		shell_fwu,			(const int8_t*)"app burn firmware"},
 	{(const int8_t*)"svc",		shell_svc,			(const int8_t*)"system service call"},
 	{(const int8_t*)"psv",		shell_psv,			(const int8_t*)"psv"},
+
 
 	/*************************************************************************/
 	/* debug command */
@@ -557,7 +560,7 @@ int32_t shell_lcd(uint8_t* argv) {
 		break;
 
 	default:
-		LOGIN_PRINT("unknow option\n");
+		LOGIN_PRINT("unknown option\n");
 		break;
 	}
 
@@ -1029,3 +1032,5 @@ int32_t shell_psv(uint8_t* argv) {
 	SCB->ICSR |= SCB_ICSR_PENDSVSET_Msk;
 	return 0;
 }
+
+

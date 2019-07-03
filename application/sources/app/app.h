@@ -125,8 +125,51 @@ enum {
 	AC_DISPLAY_INITIAL = AK_USER_DEFINE_SIG,
 	AC_DISPLAY_SHOW_ON_LOGO,
 	AC_DISPLAY_SHOW_OFF,
+	AC_GAME_DISPLAY_GAME_1,
+	AC_GAME_DISPLAY_GAME_2,
+};
+/*****************************************************************************/
+/*  GAME task define
+ */
+/*****************************************************************************/
+/* define signal */
+enum {
+	AC_GAME_INIT = AK_USER_DEFINE_SIG,
+	AC_GAME_DECIDE,
+	AC_GAME_DECIDE_LEFT,
+	AC_GAME_DECIDE_MIDDLE,
+	AC_GAME_DECIDE_RIGHT,
 };
 
+/*****************************************************************************/
+/*  GAME_SINGLE task define
+ */
+/*****************************************************************************/
+/* define signal */
+enum {
+	AC_GAME_SINGLE_INIT = AK_USER_DEFINE_SIG,
+	AC_GAME_ROUND_INIT,
+	AC_GAME_WAIT_INPUT_ROCK,
+	AC_GAME_WAIT_INPUT_PAPER,
+	AC_GAME_WAIT_INPUT_SCISSORS,
+	WINNER,
+	END,
+};
+
+/*****************************************************************************/
+/*  GAME_VERSUS task define
+ */
+/*****************************************************************************/
+/* define signal */
+enum {
+	AC_GAME_VERSUS_INIT = AK_USER_DEFINE_SIG,
+	AC_GAME_VERSUS_ROUND_INIT,
+	AC_GAME_VERSUS_ROCK,
+	AC_GAME_VERSUS_PAPER,
+	AC_GAME_VERSUS_SCISSORS,
+	AC_GAME_VERSUS_WINNER,
+	END2,
+};
 /*****************************************************************************/
 /* DBG task define
  */

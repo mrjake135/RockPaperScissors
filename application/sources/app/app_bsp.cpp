@@ -29,7 +29,7 @@ void btn_mode_callback(void* b) {
 
 	case BUTTON_SW_STATE_RELEASED: {
 		APP_DBG("[btn_mode_callback] BUTTON_SW_STATE_RELEASED\n");
-		task_post_pure_msg(AC_TASK_DISPLAY_ID, AC_DISPLAY_SHOW_ON_LOGO);
+		task_post_pure_msg(AC_TASK_GAME_ID,AC_GAME_DECIDE_LEFT);
 	}
 		break;
 
@@ -53,6 +53,7 @@ void btn_up_callback(void* b) {
 
 	case BUTTON_SW_STATE_RELEASED: {
 		APP_DBG("[btn_up_callback] BUTTON_SW_STATE_RELEASED\n");
+		task_post_pure_msg(AC_TASK_GAME_ID,AC_GAME_DECIDE_MIDDLE);
 	}
 		break;
 
@@ -76,6 +77,7 @@ void btn_down_callback(void* b) {
 
 	case BUTTON_SW_STATE_RELEASED: {
 		APP_DBG("[btn_down_callback] BUTTON_SW_STATE_RELEASED\n");
+		task_post_pure_msg(AC_TASK_GAME_ID,AC_GAME_DECIDE_RIGHT);
 	}
 		break;
 

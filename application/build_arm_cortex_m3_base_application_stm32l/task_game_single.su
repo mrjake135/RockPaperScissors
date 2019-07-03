@@ -1,0 +1,4 @@
+task_game_single.cpp:163:1:cpp)	0	static
+task_game_single.cpp:163:1:cpp)	0	static
+task_game_single.cpp:92:6:void drawArena(int, int, int)	32	static
+task_game_single.cpp:23:6:void task_game_single(ak_msg_t*)	16	static
